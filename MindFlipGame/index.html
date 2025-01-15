@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindFlip Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>MindFlip Game</h1>
+      <div class="controls">
+        <label for="domain">Domain:</label>
+        <select id="domain">
+          <option value="food">Food</option>
+          <option value="animals">Animals</option>
+          <option value="colors">Colors</option>
+        </select>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy (4x4)</option>
+          <option value="medium">Medium (6x6)</option>
+          <option value="hard">Hard (8x8)</option>
+        </select>
+        <button id="reset">Reset</button>
+      </div>
+    </header>
+    <div class="stats">
+      <div>Moves: <span id="moves">0</span></div>
+      <div>Time: <span id="timer">0s</span></div>
+    </div>
+    <div class="card-grid" id="card-grid"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
